@@ -1,9 +1,4 @@
-<!-- BEGIN:nextjs-agent-rules -->
-
-## This is NOT the Next.js you know
-
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
-
-This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
-
-<!-- END:nextjs-agent-rules -->
+1. Always read HACKATHON_SPEC.md, DESIGN_SYSTEM.md, and API_CONTRACT.md before writing code.
+2. UI must use shadcn/ui components (`@/components/ui`) and `lucide-react` icons only.
+3. Frontend must build with mock data matching API_CONTRACT.md first; never block UI on backend.
+4. Keep code modular, TypeScript strict-safe, and avoid installing heavy unapproved npm packages.
